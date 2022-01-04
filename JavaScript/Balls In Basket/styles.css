@@ -1,0 +1,31 @@
+button{
+    background-color: lightgray;
+    font-size: 20px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#button{
+    margin: 20px 0;
+    text-align: center;
+}
+
+#basket{
+    height: 100px;
+    width: 90%;
+    margin: 40px auto;
+    background-color: rgb(213, 231, 241);
+    border: 4px dashed black;
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-content: flex-start;
+    
+}
+
+.ball{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}

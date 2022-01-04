@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+
+#input{
+    padding-top: 10%;
+	margin-left: 9%;
+    width: 45%;
+    position: fixed;
+    display:inline-block;
+    height: 100vh;
+    border-right: 2px solid grey;
+}
+
+#input div{
+    width: 350px;
+    text-align: left;
+    position: relative;
+    margin: 20px;
+}
+
+#output{
+    height: 100%;
+    float: right;
+    width: 45%;
+}
+
+button{
+    position: relative;
+    font-size: 1.5rem;
+    margin-left: 100px;
+}
+
+input{
+    position: absolute;
+    font-size: 15px;
+    right: 30px;
+    padding: 6px 0;
+}
+
+#output p{
+    margin: 0;
+    margin-left: 4px;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+#output p:nth-child(2n){
+    background-color: lightgrey;
+}
+
+span{
+    background-color: green;
+    color: white;
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

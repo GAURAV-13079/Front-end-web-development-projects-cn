@@ -1,0 +1,48 @@
+body{
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-left:5%;
+}
+
+#calculator{
+    background-color: lightgray;
+    display: inline-block;
+    padding: 20px;
+}
+caption{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px 0px 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+table{
+    text-align: center;
+}
+
+#result{
+    height: 100px;
+    background-color: rgb(255, 249, 239);
+    margin: 20px auto;
+    text-align: right;
+    padding: 0px 20px;
+    color:rgb(16, 16, 224);
+    font-size: 3rem;
+}
+
+td{
+    background-color: white;
+    padding: 10px 50px;
+}
+
+td:hover{
+    background-color: rgb(253, 200, 100);
+}
+
+.operator{
+    background-color: rgb(192, 7, 7) !important;
+    color: white;
+}

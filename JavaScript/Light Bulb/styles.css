@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+
+img{
+    background-color: white;
+    margin: 50px;
+}
+
+#toggle{
+    height: 20px;
+    width: 50px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+#button{
+    height:20px;
+    width: 20px;
+    position: relative;
+    background-color: blueviolet;
+}
