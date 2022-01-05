@@ -9,9 +9,14 @@ body{
     font-size: 2rem;
 }
 
+#main{
+    display: inline-block;
+    width: 40%;
+    position: relative;
+}
+
 ul{
-    width: auto;
-    margin: 0 28%;
+    margin: 0 auto;
 }
 
 .list-item{
@@ -24,14 +29,19 @@ ul{
     text-align: start;
 }
 
+.list-item:hover{
+    background-color: grey;
+}
+
 p{
     display: inline-block;
-    padding: 0 30px 0 3px;
+    padding: 0 30px;
+    margin: 7px;
 }
 
 .contact{
     position: absolute;
-    right: 26%;
+    right: 20px;
 }
 
 form{
