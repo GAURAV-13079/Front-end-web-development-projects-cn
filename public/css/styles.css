@@ -103,9 +103,8 @@ p i{
     right: 100px;
     top: 20px;
     padding: 5px 10px;
-    /* height:; */
-    /* width: 100px; */
-    margin: 0;
+    text-transform: uppercase;
+    margin: auto 0;
     font-size: 1.2rem;
     color: white;
     background-color: blueviolet;
