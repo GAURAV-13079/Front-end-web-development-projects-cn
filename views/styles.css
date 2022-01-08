@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+    font-family: 'Roboto Slab', serif;
+    color: grey;
+}
+
+#main-div{
+    background-color: white;
+    width: 700px;
+    height: auto;
+    margin: 10vh auto;
+}
+
+#heading h1{
+    margin: 0;
+    padding: 10px 0 5px;
+    text-align: center;
+    color: grey;
+    border-bottom: 1px solid lightgray;
+}
+
+label{
+    display: block;
+    font-size: 0.7rem;
+    margin: 4px 0 5px;
+}
+
+input{
+    border: none;
+}
+
+textarea{
+    border: none;
+    width: 90%;
+}
+
+#category{
+    border-right: 1px solid grey;
+    padding-bottom: 7px;
+}
+
+.select{
+    border: none;
+    width: 80%;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.input-rows{
+    display: inline-block;
+    width: 47%;
+    padding: 5px 10px;
+    border-bottom: 1px solid grey;
+    margin-left: -4px;
+}
+
+.buttons{
+    border-bottom: 1px solid grey;
+}
+
+button{
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    position: relative;
+    color: white;
+    margin: 20px;
+    left: 13%;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+button i{
+    margin-right: 4px;
+}
+
+#add{
+    left: 17%;
+}
+
+.task{
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    position: relative;
+}
+
+.checkbox{
+    height: 1rem;
+    width: 1rem;
+}
+
+.task p{
+    margin: 3px 0;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+p i{
+    margin-right: 5px;
+}
+
+.task div{
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    padding: 5px 10px;
+    /* height:; */
+    /* width: 100px; */
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+    background-color: blueviolet;
+}
