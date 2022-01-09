@@ -7,11 +7,15 @@
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    
     <div id="main-div">
+        <p id="count">Total Count: <%= tasks.length %></p>
         <form action="/del" method="post" id="form">
-            <div id="heading"><h1>TODO App</h1></div>
+            <div id="heading">
+                <h1>TODO App</h1>
+            </div>
 
-            <div class="input-rows" style="width: 100%;">
+            <div class="input-rows" style="width: 630px;">
                 <label for="">DISCRIPTION</label>
                 <textarea name="name" id="" cols="30" rows="2" placeholder="what do you need to do"></textarea>
             </div>
@@ -26,9 +30,9 @@
                     <option value="other">Other</option>
                 </select>
             </div>
-            <div class="input-rows">
+            <div class="input-rows" id="date-input">
                 <label for="">DUE DATE</label>
-                <input type="date" class="select" name="date">
+                <input type="date" class="select" name="date" id="dateInput">
             </div>
 
             <div id="buttons">
@@ -41,11 +45,11 @@
                         <p><%= i.name %></p>
                         <p><i class="fas fa-calendar-alt"></i><span><%= i.date %></span></p>
                         <div class="tag"><%= i.type %></div>
-                        <div><a href="/del/<%=i.id%>"><i class="fas fa-trash-alt"></i></a></div>
+                        <div><a href="/del/<%=i._id%>"><i class="fas fa-trash-alt"></i></a></div>
                     </div>
                 <% } %>
         </div>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

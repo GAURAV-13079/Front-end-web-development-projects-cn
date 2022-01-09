@@ -1,6 +1,10 @@
+
 const express=require("express");
 const port=8000;
 const ejs=require("ejs");
+
+const db=require("./config/mongoose");
+const ToDo=require("./models/ToDo");
 
 const app=express();
 app.set("view engine", "ejs");
@@ -8,30 +12,40 @@ app.set("views", "./views");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
 
-var tasks=[];
+// var tasks=[];
 
 
 app.get("/", function(req, res){
-    return res.render("home", {
-        'tasks': tasks
-    });
+
+    ToDo.find({}, function(err, tasks){
+        if (err){console.log(err); return;}
+
+        return res.render("home", {
+            tasks: tasks
+        })
+    })
 })
 
 app.post("/add", function(req, res){
+    
     let data=req.body;
-    data["id"]=tasks.length;
-    if (data.name=="" || data.date=="" || data.type==""){
-        console.log("Please Fill all the data");
-        return;
+    if (data.name=="" || data.date=="" || data.type=="none"){
+        console.log("Please fill complete data");
+        return res.redirect("back");
     }
     
-    tasks.push(data);
-    return res.redirect("/");
+    ToDo.create(req.body, function(err, task){
+        if (err){console.log(err); return;}
+        return res.redirect("back");
+    })
+    
 })
 
 app.get("/del/:id", function(req, res){
-    let delTask=tasks.filter(task=>task.id==req.params.id);
-    tasks.splice(tasks.indexOf(delTask[0]), 1);
+    
+    ToDo.findByIdAndDelete(req.params.id, function(err){
+        if (err){console.log(err); return;}
+    })
 
     return res.redirect("/");
 })

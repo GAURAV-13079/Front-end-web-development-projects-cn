@@ -5,11 +5,18 @@ body{
     color: grey;
 }
 
+#count{
+    position: absolute;
+    right: 10px;
+    font-weight: bolder;
+}
+
 #main-div{
     background-color: white;
-    width: 700px;
+    width: 650px;
     height: auto;
     margin: 10vh auto;
+    position: relative;
 }
 
 #heading h1{
@@ -49,9 +56,12 @@ textarea{
 
 .input-rows{
     display: inline-block;
-    width: 47%;
+    width: 46.8%;
     padding: 5px 10px;
     border-bottom: 1px solid grey;
+}
+
+#date-input{
     margin-left: -4px;
 }
 
